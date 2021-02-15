@@ -12,16 +12,18 @@ Alphabet Soup is a non-profit, philanthropic foundation that helps different org
 
 - Compiling, Training, and Evaluating the Model
     - Two hidden layers were used, with 80 neurons in the first, and 30 neurons for the second.  80 neurons were used in the first hidden layer since it is ideal to have two to three times the amount of neurons in the hidden layer as the number of inputs \(in this case, about 40 input variables\).  The second layer helps boost the first layer's perfomance.  The "relu" activation function was used, which is the most commonly used activation function.  It is ideal for looking at positive nonlinear input data for classification or regression.\
-    ![alt text](?raw=True)
+    ![alt text](https://github.com/ABonuan/Neural_Network_Charity_Analysis/blob/main/Resources/Model_definition.png?raw=True)
     - The target model performance is 75%.  The first pass of the model achieved a 72% accuracy.\
-    ![alt text](?raw=True)
+    ![alt text](https://github.com/ABonuan/Neural_Network_Charity_Analysis/blob/main/Resources/first_pass_72_percent.png?raw=True)
     - The following are the step I took to try and increase model performance:
         - Drop "SPECIAL_CONSIDERATIONS" column\
-        ![alt text](?raw=True)
+        ![alt text](https://github.com/ABonuan/Neural_Network_Charity_Analysis/blob/main/Resources/first_opt_drop_special_consideration_73_percent.png?raw=True)
         - Add a a third hidden layer with 10 neurons\
-        ![alt text](?raw=True)
+        ![alt text](https://github.com/ABonuan/Neural_Network_Charity_Analysis/blob/main/Resources/second_opt_add_third_hidden_layer.png?raw=True)
+        ![alt text](https://github.com/ABonuan/Neural_Network_Charity_Analysis/blob/main/Resources/second_opt_73_percent.png?raw=True)
         - Add 100 more epochs to the training regimen, now with a total of 200 epochs.\
-        ![alt text](?raw=True) 
+        ![alt text](https://github.com/ABonuan/Neural_Network_Charity_Analysis/blob/main/Resources/third_opt_add_100_epochs.png?raw=True)
+        ![alt text](https://github.com/ABonuan/Neural_Network_Charity_Analysis/blob/main/Resources/third_opt_73_percent.png?raw=True) 
 
 ## Summary
 Overall, the deep learning neural netork only achieves a maximum of 73% accuracy on predicting whether or not the donations of Alphabet Soup to a specific organization is impactful.
